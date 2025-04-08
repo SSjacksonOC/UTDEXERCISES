@@ -1,7 +1,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title> Web Page 01 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title> POEM </title>
     <style>
         html {
             width: 100%;
@@ -35,7 +36,17 @@
         <div class="last">poem</div>
         
         </div>
-    
+    <script>
+        document.body.style.opacity = 0.5;
+        let rotation = 0;
+        document.addEventListener("click", function () {
+            let min = 10;
+            let max = 40;
+            rotation += Math.random() * (max - min) + min;
+            document.body.style.transform = 'rotate(${rotation}deg)';
+
+        });
+    </script>
 </body>
 
 </html>
