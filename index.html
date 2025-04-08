@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -25,6 +26,10 @@
             padding-bottom: 2rem;
             border-bottom: 2px solid rgb(220, 200, 180);
         }
+        body {
+            transition-property: transform;
+            transition-duration: 3s;
+        }
     </style>
 </head>
 
@@ -38,6 +43,8 @@
         </div>
     <script>
         document.body.style.opacity = 0.5;
+        document.body.style.transform = 'rotate(35deg)';
+        
         let rotation = 0;
         document.addEventListener("click", function () {
             let min = 10;
