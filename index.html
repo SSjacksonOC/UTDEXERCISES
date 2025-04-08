@@ -56,6 +56,8 @@
        // define divs
        let divs = document.querySelectorAll(".grid-container div");
 
+       function randomize() {
+
        //only to each div tags
        divs.forEach(function (div) {
          let scale = randomNumber(.5, 1.2);
@@ -71,16 +73,20 @@
          }
          div.style.transform = `scale(${scale}) translate(${translateX}%, ${translateY}%) rotate(${rotate}deg)`;
        });
+    }
+
+    document.addEventListener("click", randomize);
 
         
-            let rotation = 0;
-            document.addEventListener("click", function () {
-                let min = 10;
-                let max = 40;
-                rotation += Math.random() * (max - min) + min;
-                document.body.style.transform = `rotate(${rotation}deg)`;
+          //  let rotation = 0;
+          //  document.addEventListener("click", function () {
+            //    let min = 10;
+              //  let max = 40;
+                //rotation += Math.random() * (max - min) + min;
+                //document.body.style.transform = `rotate(${rotation}deg)`;
 
-            });
+            //});
+
 
         //Lets make it so this is a block of solid color? and then clicking makes it spin/move so that it shows beneath text
     </script>
