@@ -1,17 +1,40 @@
 <html lang="en">
 <head>
+    <meta charset="utf-8">
     <title> Web Page 01 </title>
     <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
         body {
             margin: 1rem;
             background-color: black;
             color: whitesmoke;
             font-size: 5rem;
             overflow: hidden;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 15% 4rem 0 4rem;
+        }
+        .last {
+            padding-bottom: 2rem;
+            border-bottom: 2px solid rgb(220, 200, 180);
+        }
     </style>
 </head>
 
 <body>
+
+    <div class="grid-container">
+        <div>this</div>
+        <div>is</div>
+        <div class="last">poem</div>
+        
+        </div>
     
 </body>
 
