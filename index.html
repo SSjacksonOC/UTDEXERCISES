@@ -11,9 +11,10 @@
         }
         body {
             margin: 1rem;
-            background-color: black;
-            color: whitesmoke;
+            background-color: rgb(184, 161, 131);
+            color: rgb(222, 213, 205);
             font-size: 5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             overflow: hidden;
         }
         .grid-container {
@@ -24,7 +25,7 @@
         }
         .last {
             padding-bottom: 2rem;
-            border-bottom: 2px solid rgb(220, 200, 180);
+            border-bottom: 2px solid rgb(207, 184, 161);
         }
         body {
             transition-property: transform;
@@ -38,13 +39,24 @@
     <div class="grid-container">
         <div>this</div>
         <div>is</div>
-        <div class="last">poem</div>
-        <div>is</div>
-        <div>yepp</div>
-        <div>uhuhhhhhh</div>
-        <div class="last">yurrr</div>
-        
+        <div class="last">Glinted wings&mdash;Crystal wings</div>
+        <div>Let me see myself little bird</div>
+        <div>Show this handsome tod vitric wings.</div>
+        <div>Show me&mdash;So long has it been</div>
+        <div>I can't help but gaze upon such beauty&mdash;</div>
+        <div class="last">As is held between your talons</div>
+        <div> </div>
         </div>
+
+    <div class="grid-container">
+        <div> . . . </div>
+
+        <div class="last">Oh&tilde; Look! Look&mdash;</div>
+        <div>Even so broken&mdash;Shattered</div>
+        <div>I see my face!</div>
+        <div class="last">Oh&tilde; It was just mean't to be!</div>
+        
+    </div>
     <script>
         //document.body.style.opacity = 0.5;
        // document.body.style.transform = `rotate(35deg)`;
@@ -60,7 +72,7 @@
 
        //only to each div tags
        divs.forEach(function (div) {
-         let scale = randomNumber(.5, 1.2);
+         let scale = randomNumber(.3, 1.1);
          let translateX = randomNumber(0, 50);
          let translateY = randomNumber(0, 20);
          let rotate = randomNumber(0, 360);
